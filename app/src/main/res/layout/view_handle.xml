@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/bg_3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="配置单注下单操作" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="配置双注下单操作" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="下注价格"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/et_save_fail_sum_buy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="连续未中奖次数触发下注数量"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btn_save_fail_sum_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="隐藏弹窗" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="退出配置" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="@drawable/bg_3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="标题"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_2_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="增加操作" />
+
+        <Button
+            android:id="@+id/btn_2_2"
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="清除操作" />
+
+        <Button
+            android:id="@+id/btn_2_4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="切换长按操作"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_2_5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="执行测试" />
+
+        <Button
+            android:id="@+id/btn_2_3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="@drawable/bg_3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_title_3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="标题"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_3_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="开始执行" />
+
+        <Button
+            android:id="@+id/btn_3_4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="隐藏弹窗" />
+
+        <Button
+            android:id="@+id/btn_3_5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="查看日志" />
+
+        <Button
+            android:id="@+id/btn_3_6"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="停止并查看统计数据" />
+
+        <Button
+            android:id="@+id/btn_3_7"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="清空统计数据" />
+
+        <Button
+            android:id="@+id/btn_3_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="停止执行" />
+
+        <Button
+            android:id="@+id/btn_3_3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="停止并退出" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_log"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="@drawable/bg_3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="saSa" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </FrameLayout>
+
+
+</FrameLayout>
